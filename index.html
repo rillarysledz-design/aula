@@ -1,13 +1,82 @@
-const botao = document.getElementById("tema");
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Makeup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-botao.addEventListener("click", () => {
+<header>
+    <h1>Beauty Makeup</h1>
 
-    document.body.classList.toggle("dark");
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Maquiagens</a>
+        <a href="#avaliacoes">Avaliações</a>
+    </nav>
 
-    if(document.body.classList.contains("dark")){
-        botao.textContent = "☀";
-    }else{
-        botao.textContent = "🌙";
-    }
+    <button id="tema">🌙</button>
+</header>
 
-});
+<section class="banner">
+    <div>
+        <h2>Realce sua beleza</h2>
+        <p>Descubra maquiagens incríveis para todas as ocasiões.</p>
+        <button>Conheça</button>
+    </div>
+</section>
+
+<section id="sobre" class="sobre">
+    <h2>Sobre a maquiagem</h2>
+
+    <p>
+        A maquiagem é uma forma de expressar personalidade,
+        aumentar a autoestima e destacar a beleza natural.
+    </p>
+</section>
+
+<section id="produtos" class="cards">
+
+    <div class="card">
+        <h3>💄 Batom</h3>
+        <p>Cores vibrantes e acabamento perfeito.</p>
+    </div>
+
+    <div class="card">
+        <h3>👁 Sombra</h3>
+        <p>Paletas incríveis para qualquer ocasião.</p>
+    </div>
+
+    <div class="card">
+        <h3>✨ Iluminador</h3>
+        <p>Brilho elegante para destacar seu rosto.</p>
+    </div>
+
+</section>
+
+<section id="avaliacoes" class="avaliacoes">
+
+    <h2>Avaliações</h2>
+
+    <div class="comentario">
+        ⭐⭐⭐⭐⭐
+        <p>"Produtos maravilhosos!"</p>
+    </div>
+
+    <div class="comentario">
+        ⭐⭐⭐⭐⭐
+        <p>"Qualidade excelente."</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Beauty Makeup</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
